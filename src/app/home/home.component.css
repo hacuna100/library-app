@@ -1,0 +1,70 @@
+.filters {
+    display: flex;
+    padding-top: 10px;
+}
+
+.filter-input {
+    margin-right: 20px;
+    height: 50px;
+    vertical-align: top;
+    font-size: large;
+}
+
+.search-btn {
+    vertical-align: top;
+    height: 56px;
+}
+
+.filter-select {
+    width: 130px;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 567px) {
+    .filters {
+        display: block !important;
+    }
+    .search-btn {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .filter-input {
+        width: 98%;
+        margin-bottom: 20px;
+     }
+}
+
+.divider {
+    width: 99.55%;
+    border: 2px solid purple;
+    height: 0;
+}
+
+.results {
+    display: grid;
+    column-gap: 14px;
+    row-gap: 14px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 300px));
+    justify-content: space-around;
+  }
+
+@media (min-width: 500px) and (max-width: 768px) {
+    .results {
+        grid-template-columns: repeat(2, 1fr);
+    }   
+  }
+  
+@media (max-width: 499px) {
+    .results app-book-data {
+       margin: auto;
+    }    
+  }
+
+  .add-btn {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    font-size: 50px;
+    color: whitesmoke;
+}

@@ -1,0 +1,7 @@
+.brand-name {
+    display: flex;
+}
+
+.brand-name h1 {
+    padding-left: 20px;
+}

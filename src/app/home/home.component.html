@@ -1,0 +1,21 @@
+<section>
+    <form class="filters">
+        <mat-form-field class="filter-select">
+            <mat-label>Filter</mat-label>
+            <mat-select [(ngModel)]="selectedFilter" name="bookf" #filterOps>
+                @for (bookf of booksf; track bookf) {
+                    <mat-option [value]="bookf.valueFilter">{{ bookf.valueFilter }}</mat-option>
+                }
+            </mat-select>
+        </mat-form-field>
+        <input class="filter-input" type="text" placeholder="Filter By {{ selectedFilter }}" #inputFilter>
+        <button mat-raised-button class="search-btn" (click)="filterBooks(inputFilter.value)">Search</button>
+    </form>
+    <div class="divider"></div>
+</section>
+<section class="results">
+    <app-book-data *ngFor="let bookData of filteredBooksList" [bookData]="bookData"></app-book-data>
+</section>
+<section>
+    <button mat-fab class="add-btn" color="primary" (click)="openDialog()">+</button>
+</section>

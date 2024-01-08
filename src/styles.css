@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%;}
+
+.home-frmt {
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 725px)  {
+    .home-frmt {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+}
+
+@media screen and (max-width: 567px)  {
+    .home-frmt {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+}
+
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+

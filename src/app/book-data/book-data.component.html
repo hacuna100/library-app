@@ -1,0 +1,7 @@
+<section class="book-disp">
+    <h2 class="book-heading">{{ bookData.title }}</h2>
+    <p><b>Author:</b> {{ bookData.author }}</p>
+    <p><b>Year Published:</b> {{ bookData.published.getFullYear() }}</p>
+    <p><b>Genre: </b> {{ bookData.genre }}</p>
+    <p><b>Read? </b> <mat-checkbox [(ngModel)]="bookData.read"></mat-checkbox></p>
+</section>

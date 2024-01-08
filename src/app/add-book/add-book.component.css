@@ -1,0 +1,16 @@
+.popup-box {
+    padding: 20px;
+}
+
+h1 {
+    margin-left: 20px;
+}
+
+.popup-box div {
+    padding-bottom: 10px;
+}
+
+.add-btn-frm {
+    margin: auto;
+    width: 20%;
+}

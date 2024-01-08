@@ -1,0 +1,11 @@
+<h1>Add Book</h1>
+<form action="" class="popup-box">
+    <div>Title: <input type="text" #titleInput></div>
+    <div>Author: <input type="text" #authorInput></div>
+    <div>Year Published: <input type="date" #pubInput></div>
+    <div>Genre: <input type="text" #genreInput></div>
+    <div>Read? <mat-checkbox #readInput></mat-checkbox></div>
+    <div class="add-btn-frm">
+        <button type="submit" mat-button color="primary" (click)="addBook(titleInput.value, authorInput.value, pubInput.value, genreInput.value, readInput.checked)">Add Book</button>
+    </div>
+</form>
