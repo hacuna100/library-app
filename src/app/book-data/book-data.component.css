@@ -6,3 +6,8 @@
     padding: 10px;
     box-shadow: 2px 2px 3px gray;
 }
+
+.del-tile {
+    display: flex;
+    justify-content: flex-end;
+}
